@@ -1,0 +1,17 @@
+.featured{
+    background-color:var(--lightestColor);
+    color: var(--bluedark);
+    border: var(--bluedark) 5px solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.featured.dark{
+    background-color: var(--bluedark);
+    border: 3px solid var(--lightestColor);
+}

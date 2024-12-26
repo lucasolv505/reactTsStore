@@ -1,0 +1,25 @@
+.footerContainer{
+    background-color: var(--bluegray);
+    padding: 20px;
+    display: flex;
+}
+
+.footerContainer.dark{
+    background-color: var(--bluedark);
+    color: var(--lightestColor);
+}
+
+.linksFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+.link{
+    text-decoration: underline;
+    margin: 15px;
+    margin-bottom: 15px;
+}
+
+.link:hover{
+    color: var(--bluesky);
+}
