@@ -70,10 +70,10 @@ function Inputs() {
       return;
     }
 
-    alert("Send Successfully");
+    alert("Send Successfully")
 
-    setErrors({});
-    createInfo(); // Cria a informação após a validação.
+    setErrors({})
+    createInfo()
   }
 
   function createInfo() {
@@ -85,7 +85,7 @@ function Inputs() {
             color: `var(--${theme === "dark" ? "lightestColor" : "bluedark"})`,
           }}
         >
-          <div>PACKAGE SEND TO:</div>
+          <div>PACKAGE SENT TO:</div>
           <div>Name: {name}</div>
           <div>Email: {email}</div>
           <div>City: {city}</div>
