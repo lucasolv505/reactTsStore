@@ -17,7 +17,7 @@ type CardProps = CardPropsWithDiscount | CardsPropsWithoutDiscount
 function Card({product,price,discount,myFunction}:CardProps) {
 
   return (
-    <div className={`flex flex-col border-4 ${discount ? 'border-blue-700' : 'border-red-700' } rounded-sm p-5 min-w-[20%] justify-center items-center bg-[#EDEDED]`} >
+    <div className={`card flex flex-col border-4 ${discount ? 'border-blue-700' : 'border-red-700' } rounded-sm p-5 min-w-[20%] justify-center items-center bg-[#EDEDED]`} >
 
         <div>{product}</div>
 

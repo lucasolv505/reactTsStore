@@ -65,14 +65,14 @@ function ProductPage({ cover, name, price, discount, avaliable, genre, id, desc 
       <Topo />
 
       <div className="items-center justify-center flex">
-        <div className="flex flex-col justify-center mt-10 bg-[#ffffff57] rounded-xl px-20 py-12 w-[50%]">
+        <div className="productContainer flex flex-col justify-center mt-10 bg-[#ffffff57] rounded-xl py-12 w-[50%]">
           <div className="mb-10">
-            <Link className="btnDefault w-[40px]" href={'/products/ProductsPage'}>←
+            <Link className="btnDefault w-[40px]" href={genre === null? '/products/ProductsPage' : '/filter/Filter'}>←
             </Link>
           </div>
 
-          <div className="flex justify-center">
-            <div className="mr-10">
+          <div className="productInfo flex justify-center">
+            <div className="imgbox">
               {cover ? <img className="w-64 border-4 border-[var(--lightestColor)]" src={cover.toString()} alt={`${cover} cover`} /> : 'where is the cover?'}
             </div>
 

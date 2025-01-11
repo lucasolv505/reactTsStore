@@ -1,0 +1,31 @@
+.productContainer{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.imgbox{
+    margin-right: 2.5rem;
+}
+
+@media (max-width: 1000px){
+    .productContainer{
+        padding: 20px;
+    }
+
+    .productInfo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imgbox{
+        margin: auto;
+    }
+
+    .test{
+        border: 3px solid red;
+        background-color: red;
+        
+    }
+}

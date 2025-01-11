@@ -1,6 +1,10 @@
 @import 'top.css';
 @import 'index.css';
 @import 'footer.css';
+@import 'card.css';
+@import 'productsPage.css';
+@import 'product.css';
+@import 'inputs.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

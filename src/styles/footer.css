@@ -4,6 +4,12 @@
     display: flex;
 }
 
+.logoSec,
+.textSec,
+.finalSec{
+    width: 20%;
+}
+
 .footerContainer.dark{
     background-color: var(--bluedark);
     color: var(--lightestColor);
@@ -22,4 +28,27 @@
 
 .link:hover{
     color: var(--bluesky);
+}
+
+@media (max-width:768px){
+    .footerContainer{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoSec,
+    .textSec,
+    .finalSec{
+        width: 100%;
+        padding: .5rem;
+        margin-top: 2rem;
+    }
+
+    .linksFooter{
+        display: flex;
+        margin-top: .5rem;
+    }
 }

@@ -78,9 +78,9 @@ function Inputs() {
 
   function createInfo() {
     setShipInfo(
-      <div className="flex border-4 border-green-700 p-4 w-[50%] items-center justify-center">
+      <div className="shipInfoContainer flex border-4 border-green-700 p-4">
         <div
-          className="ship-info-container flex justify-center flex-col w-[50%]"
+          className="shipInfo flex justify-center flex-col"
           style={{
             color: `var(--${theme === "dark" ? "lightestColor" : "bluedark"})`,
           }}

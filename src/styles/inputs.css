@@ -1,0 +1,26 @@
+.shipInfoContainer{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.shipInfo{
+    width: 50%;
+}
+
+@media (max-width:768px){
+    .shipInfoContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .shipInfo{
+        width: 100%;
+        margin-bottom: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .test{
+        background-color: red;
+        border: 2px solid blue;
+    }
+}

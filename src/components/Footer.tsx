@@ -7,17 +7,17 @@ function Footer() {
 
     return (
         <div className={`footerContainer justify-evenly mt-14 ${theme==='dark' && 'dark'}`}>
-            <div className='w-[20%]'>
+            <div className='logoSec'>
                 <Link className='flex justify-center' href={'/'}>
                     <img className="w-[100px]" src="/techlogo.png" alt="logo" />
                 </Link>
                 <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
-            <div className='w-[20%]'>
+            <div className='textSec'>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus assumenda nulla excepturi, veritatis rem porro quia, officiis facere labore distinctio vitae incidunt blanditiis cumque, voluptatem eos. Quibusdam reprehenderit dolorem facilis!</p>
             </div>
-
+            
             <div className='linksFooter'>
                 <div>
                     <Link className="w-[100px] link" href={'/'}>Home
@@ -52,7 +52,7 @@ function Footer() {
                 </div>
             </div>
 
-            <div className='w-[20%]'>
+            <div className='finalSec'>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus assumenda nulla excepturi</p>
             </div>
         </div>

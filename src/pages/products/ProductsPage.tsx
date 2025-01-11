@@ -106,7 +106,7 @@ const products = [
 ]
 
 function ProductsPage() {
-  const {theme} = useTheme()
+  const { theme } = useTheme()
   const [quantities, setQuantities] = useState<{ [key: string]: number }>({})
 
   function addToQtd(productName: string) {
@@ -138,17 +138,18 @@ function ProductsPage() {
     <div>
 
       <Topo />
+
       <div className="flex flex-wrap justify-center p-3">
 
         {products.map((product) => (
-          <div key={product.name} className="flex flex-col justify-center min-w-[30%] m-4 p-3" 
-          style={{
-            color: `var(--${theme === 'dark'?'lightestColor': 'bluedark'})`, 
-            backgroundColor: `var(--${theme === 'dark'?'bluedark':'lightestColor'})`,
-            border: `3px solid var(--${theme === 'dark'? 'lightestColor':'bluedark'})`
+          <div key={product.name} className="productContainer flex flex-col justify-center m-4 p-3"
+            style={{
+              color: `var(--${theme === 'dark' ? 'lightestColor' : 'bluedark'})`,
+              backgroundColor: `var(--${theme === 'dark' ? 'bluedark' : 'lightestColor'})`,
+              border: `3px solid var(--${theme === 'dark' ? 'lightestColor' : 'bluedark'})`
             }}>
 
-            <Link className="flex justify-center p-4 gap-5" href={{
+            <Link className="pInfos flex justify-center p-4 gap-5" href={{
               pathname: `/product/${product.name.toLowerCase()}`,
               query: { cover: product.cover, name: product.name, price: product.price, discount: product.discount, avaliable: product.avaliable, desc: product.desc }
             }}
@@ -167,7 +168,8 @@ function ProductsPage() {
         ))}
 
       </div>
-      <Footer/>
+
+      <Footer />
     </div>
   )
 }

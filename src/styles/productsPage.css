@@ -1,0 +1,19 @@
+.productContainer{
+    background-color: red;
+    width: 25rem;
+}
+
+@media (max-width: 768px){
+    .productContainer{
+        min-width: 100%;
+    }    
+
+    .pInfos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+}

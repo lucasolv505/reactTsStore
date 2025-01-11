@@ -56,7 +56,7 @@ export default function Home() {
       <Topo />
 
       <div className="p-8">
-        <div className="flex justify-center gap-3 p-8 ">
+        <div className="discountSection flex justify-center gap-3">
 
           <Card product={'Mouse'} price={49.90} discount={10} myFunction={calcDiscPercent} />
 
@@ -72,7 +72,7 @@ export default function Home() {
 
         <h2 className="text-center mt-10 font-bold text-4xl overflow-y-hidden" style={{color: `var(--${theme === 'dark'? 'lightestColor': 'bluedark'})`}}>Featured</h2>
 
-        <div className="flex justify-center gap-3 mt-2 p-5">
+        <div className="featuredSection flex justify-center gap-3 mt-2 p-5">
           {products.map((product) => (
             product.avaliable === true &&
 

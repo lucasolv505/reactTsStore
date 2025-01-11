@@ -1,3 +1,8 @@
+.discountSection{
+    width: 100%;
+    padding: 1.8rem;
+}
+
 .featured{
     background-color:var(--lightestColor);
     color: var(--bluedark);
@@ -14,4 +19,17 @@
 .featured.dark{
     background-color: var(--bluedark);
     border: 3px solid var(--lightestColor);
+}
+
+@media (max-width:768px){
+    .discountSection{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .featuredSection{
+        display: flex;
+        flex-direction: column;
+    }
 }

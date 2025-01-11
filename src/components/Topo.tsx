@@ -33,7 +33,7 @@ function Topo() {
             <div className={`header ${theme === 'dark'? 'dark': ''}`}>
                 {showLogo()}
 
-                <div className="flex flex-col justify-center items-center">
+                <div className="storeName justify-center items-center">
                     <div className={`text-xl ${theme === 'dark'? 'textDarkMode': ''}`}>{myConst}</div>
                     <div className={`subtitleTop ${theme === 'dark'?'dark':''}`}>↑ my const ↑</div>
                 </div>
@@ -53,12 +53,6 @@ function Topo() {
                 </Link>
 
                 <Link className="btnDefault w-[100px]" href={'/products/ProductsPage'}>Products
-                </Link>
-
-                <Link className="btnDefault w-[100px]" href={'/testPage/TestPage'}>Test Page
-                </Link>
-
-                <Link className="btnDefault w-[100px]" href={'/usestate/Usestate'}>UseState
                 </Link>
 
                 <Link className="btnDefault w-[100px]" href={'/inputs/Inputs'}>Inputs
